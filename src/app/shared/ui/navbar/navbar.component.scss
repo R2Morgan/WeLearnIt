@@ -1,0 +1,165 @@
+@import "../../../../styles/variables";
+
+.main{
+    width:400px;
+    height:100vh;
+    background-color: $navy;
+    padding: 50px;
+    box-shadow: 5px 0 5px -2px #22222260;
+}
+
+.profile-pic{
+    width:75px;
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 25px;
+    min-width: 75px;
+    max-width: 75px;
+}
+
+.fa-solid{
+    color:white;
+    display: inline-block;
+    width:50px;
+}
+
+.tab-title{
+    color:white;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:220px;
+}
+
+.tab-section{
+    padding-left:20px;
+    margin-left:-20px;
+    width: 113%;
+    border-radius: 10px;
+    padding-bottom:7px;
+    padding-top:15px;
+}
+
+.section-name{
+    color:white;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+.name{
+    color:white;
+    margin-top:30px;
+}
+
+.status{
+    width:25px;
+    height:25px;
+    background-color:rgb(0, 218, 0);
+    border-radius: 50px;
+    display: inline-block;
+    position:relative;
+    left:-17px;
+    top:-18px;
+    border-color: $navy;
+    border-style: solid;
+    }
+
+.logo{
+    width:100px;
+    display: block;
+    margin: 0 auto;
+    margin-top:-20px;
+    margin-bottom:20px;
+}
+
+.active{
+    background-color: $blue;
+}
+
+.active h2{
+    color: $jordy;
+}
+
+.active .icon{
+    color: $jordy;
+}
+
+.tab-section:hover h2, .tab-section:hover .icon{
+    color: $jordy;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: fixed;
+    top:145px;
+    left:135px;
+    background-color: $jordy;
+    border-radius: 10px;
+    padding-bottom: 0px;
+}
+
+.dropdown-content p {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    padding:15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display: block;}
+
+  .av:hover{
+    background-color:rgb(0, 218, 0);
+    color:rgb(0, 116, 0);
+  }
+
+  .aw:hover{
+    background-color: $orange;
+    color: #7a2b06;
+  }
+
+  .bs:hover{
+    background-color: $crimson;
+    color: #811823;
+  }
+
+  .notification{
+    display: inline-block;
+    width:30px;
+    height:20px;
+    background-color: $crimson;
+    text-align: center;
+    color:white;
+    border-radius: 25px;
+    font-size: 12px;
+    position: static;
+    margin:0 auto;
+    margin-top: 3px;
+  }
+
+  .icon{
+    color:white;
+    width:20px;
+    margin-right:35px;
+  }
+
+  .available{
+    background-color: rgb(0, 218, 0);
+  }
+
+  .away{
+    background-color: $orange;
+  }
+
+  .busy{
+    background-color: $crimson;
+  }

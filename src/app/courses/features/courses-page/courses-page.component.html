@@ -1,0 +1,10 @@
+<header></header>
+<div class="main">
+  <div>  
+    <h1 class="page-title">COURSES</h1>
+    <hr>
+    <div class="container">
+      <course-card *ngFor="let course of courses$ | async" class="course-card" courseId="{{course.id}}" professorId="{{course.professorId}}" courseName="{{course.name}}" courseImage="{{course.courseImage}}"></course-card>
+    </div>
+  </div>
+</div>

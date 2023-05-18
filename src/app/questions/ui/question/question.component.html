@@ -1,0 +1,36 @@
+<div class="card main">
+    <div class="status-div" [ngClass]="getStatusClass(question.status)"></div>
+    <div class="content">
+        <div class="header-div card-header">
+            <p class="header-1">{{ (user | async)?.[0]?.title }} {{ (user | async)?.[0]?.firstName }} {{ (user | async)?.[0]?.lastName }}</p>
+            <p class="header-2">{{ (course | async)?.[0]?.name }}</p>
+        </div>
+        <div class="content-div card-body">
+            <div class="col-1 image-div">
+                <a href="../../../../assets/code-example.png" download>
+                    <img class="code-image" src="{{ question.imageURL }}">
+                </a>
+            </div>
+            <div class="col-2 question-div">
+                {{ question.text }}
+            </div>
+            <div class="col-3 answer-div">
+                <p> a. {{ question.optionA }} </p>
+                <p> b. {{ question.optionB }} </p>
+                <p> c. {{ question.optionC }} </p>
+                <p> c. {{ question.optionD }} </p>
+            </div>
+            <div class="col-4 professor-div" *ngIf="question.status === 0 && (user | async)?.[0]?.type === 0">
+                <button class="first-button" (click)="approveQuestion()">
+                    <i class="fa-solid fa-check fa-2xl"></i>
+                </button>
+                <button (click)="rejectQuestion()">
+                    <i class="fa-solid fa-x fa-xl"></i>
+                </button>
+            </div>            
+        </div>
+        <div class="card-footer footer-div">
+            <p>{{ question.tags }}</p>
+        </div>
+    </div>
+</div>

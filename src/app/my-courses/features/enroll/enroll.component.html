@@ -1,0 +1,14 @@
+<div class="course-list">
+    <div class="course" *ngFor="let course of displayedCourses | async; let i = index">
+      <img src="../../../../assets/ProfilePic.png" />
+      <div class="details-1">
+        <p class="name">{{ course.name }}</p>
+        <p class="professor">{{ course.professor }}</p>
+      </div>
+      <div class="details-2">
+        <p>{{ lectures[i] }} Lectures | {{ quizzes[i] }} Quizzes</p>
+        <button (click)="enrollInCourse(course.id)"><i class="fa-solid fa-plus"></i></button>
+      </div>
+    </div>
+  </div>
+  

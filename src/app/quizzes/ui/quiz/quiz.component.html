@@ -1,0 +1,26 @@
+<div class="card main">
+    <div class="status-div">
+
+    </div>
+    <div class="content">
+        <div class="header-div card-header">
+            <p class="header-1"> {{ (user | async)?.[0]?.title }} {{ (user | async)?.[0]?.firstName }} {{ (user | async)?.[0]?.lastName }} </p>
+            <p class="header-2"> {{ (course | async)?.[0]?.name }} </p>
+        </div>
+        <div class="content-div card-body">
+            <div class="col-1">
+                <a href="{{quiz.url}}">
+                    {{quiz.name}}
+                </a>
+            </div>
+            <div class="col-2" *ngIf="(user | async)?.[0]?.type === 0">
+                <button (click)="deleteQuiz()">
+                    <i class="fa-solid fa-x fa-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-footer footer-div">
+            <p>{{quiz.tags}}</p>
+        </div>
+    </div>
+</div>

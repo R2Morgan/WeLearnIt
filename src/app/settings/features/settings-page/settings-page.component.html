@@ -1,0 +1,37 @@
+<div class="main">
+    <div class="navbar-div">
+        <navbar></navbar>
+    </div>
+    <div class="content-div">
+        <div class="settings-title">
+            <h1 class="title">Settings</h1>
+            <i class="fa-solid fa-cog icon"></i>
+            <hr class="top-hr">
+        </div>
+        <div class="form"  *ngIf="currentUser">
+            <div class="settings-div">
+                <img class="profile-picture" src="{{profilePicURL}}"/>
+                <input type="text" id="profilePicUrlInput" placeholder="Profile Pic URL"  [(ngModel)]="profilePicURL">
+            </div>
+            <hr class="divider">
+            <div class="extra-div">    
+                <input type="text" id="roleInput" placeholder="Student" disabled  [value]="currentUser.type === 0 ? 'Student' : 'Professor'">
+                <input type="text" id="genderInput" placeholder="Mr."  [(ngModel)]="gender">
+            </div>   
+            <hr class="divider">
+            <div class="name-div">    
+                <input type="text" id="firstNameInput" placeholder="John" [(ngModel)]="firstName">
+                <input type="text" id="lastNameInput" placeholder="Smith" [(ngModel)]="lastName">
+            </div>        
+            <hr class="divider">
+            <div class="login-div">    
+                <input type="email" id="emailInput" placeholder="email@yahoo.com" disabled  [(ngModel)]="email">
+                <input type="password" id="passwordInput" placeholder="Password"  [(ngModel)]="password">
+            </div>
+            <button class="update-button login-button" type="submit" (click)="onUpdateUserSubmit()"> UPDATE </button>
+            <a href="">
+                <button class="logout-button" (click)="logout()"> LOG OUT </button>
+            </a>
+        </div>
+    </div>
+</div>

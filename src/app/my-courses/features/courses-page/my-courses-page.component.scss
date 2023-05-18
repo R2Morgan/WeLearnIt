@@ -1,0 +1,125 @@
+@import "../../../../styles/variables";
+
+.main{
+    height: 100vh;
+    background-image: url("../../../../assets/Background.svg");
+    background-size: 110%;
+}
+
+.navbar-div{
+    display:inline-block;
+}
+
+.content-div{
+    display: inline-block;
+    position:static;
+    vertical-align: top;
+}
+
+.courses-title{
+    margin-top:70px;
+    margin-left:275px;
+}
+
+.title{
+    display: inline-block;
+    font-size: 26px;
+    color:darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon{
+    display: inline-block;
+    color:darkgray;
+    position: relative;
+    top:-3px;
+    margin-left:13px;
+}
+
+hr{
+    width:60px;
+    height:3px;
+    border:none;
+    border-radius: 15px;
+    background-color:$jordy;
+    margin-top:-7px;
+    margin-bottom: 30px;
+}
+
+.courses-container{
+    width: 1235px;
+    height: 82vh;
+    margin-left: 150px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    padding: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: $blue;
+
+    // Hides the Scrollbar
+    display: initial;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #1b1d5e;
+}
+
+course-card:nth-child(4n+1), .add-course-div:nth-child(4n+1){
+    background-color: $crimson;
+  }
+  
+course-card:nth-child(4n+2), .add-course-div:nth-child(4n+2){
+    background-color: $blue;
+  }
+  
+course-card:nth-child(4n+3), .add-course-div:nth-child(4n+3){
+    background-color: $orange;
+  }
+  
+course-card:nth-child(4n+4), .add-course-div:nth-child(4n+4){
+    background-color: $jordy;
+  }
+  
+course-card, .add-course-div{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 380px;
+    height: 350px;
+    transition: all .2s ease-in-out;
+  }
+  
+course-card:hover, .add-course-div:hover{
+    transform: scale(1.05);
+  }
+
+.white-border{
+    width:300px;
+    height: 270px;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: white;
+}
+
+.plus-icon {
+    margin-top:115px;
+    margin-left: 200px;
+    transform: scale(3);
+    color: white;
+}
+
+.courses-container{
+    overflow-x: hidden;
+}

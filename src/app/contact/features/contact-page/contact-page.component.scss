@@ -1,0 +1,44 @@
+@import "../../../../styles/variables";
+
+.main{
+    height:91vh;
+    background-image: url("../../../../assets/InvertedBackground.svg");
+    background-size: 101%;
+    background-position-y: -1px;
+}
+
+.page-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    color:white;
+}
+
+.left-div{
+    display: inline-block;
+    width:40%;
+    margin-left:150px;
+    position: relative;
+    top:75px;
+}
+
+.right-div{
+    display: inline-block;
+}
+
+hr{
+    width:250px;
+    margin-left:0px;
+    margin-bottom: 50px;
+    border-width: 3px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+.contact-art{
+    width:700px;
+    position: relative;
+    bottom:100px;
+    right:-15vw;
+}

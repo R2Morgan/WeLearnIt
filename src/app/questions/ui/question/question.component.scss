@@ -1,0 +1,117 @@
+@import "../../../../styles/variables";
+
+.main{
+    height: 100px;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    margin-bottom:10px;
+    box-shadow: 0px 5px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height:200px;
+    color:black;
+}
+
+.status-div{
+    width: 0.4%;
+    height: 101%;
+    display: inline-block;
+    background-color: $orange;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.content{
+    display: inline-block;
+    vertical-align: top;
+    width: 99.6%;
+}
+
+.header-1{
+    display: inline-block;
+}
+
+.header-2{
+    float:right;
+}
+
+.header-div{
+    height:40px;
+}
+
+.content-div{
+    height:130px;
+}
+
+.footer-div{
+    height:30px;
+}
+
+.footer-div p{
+    margin-top: -6px;
+    text-align: center;
+}
+
+.code-image{
+    width: 200px;
+    max-width: 200px;
+    max-height: 110px;
+    margin-top:-5px;
+}
+
+.col-1{
+    display: inline-block;
+}
+
+.col-2{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 125px;
+    vertical-align:middle;
+    width: 500px;
+}
+
+.col-3{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col-4{
+    display: inline-block;
+    vertical-align: middle;
+    width:270px;
+}
+
+.col-3 p{
+    margin-bottom: 2px;
+    width: 500px;
+    height:23px;
+    overflow: hidden;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    margin-left: 10%;
+}
+
+.first-button{
+   margin-left: 60%;
+}
+
+.fa-check{
+    color:$jordy;
+}
+
+.fa-x{
+    color:$crimson;
+}
+
+.approved{
+    background-color: $navy;
+}
+
+.rejected{
+    background-color: $crimson;
+}

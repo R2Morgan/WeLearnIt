@@ -1,0 +1,139 @@
+@import "../../../../styles/variables";
+
+.main{
+    height: 100vh;
+    background-image: url("../../../../assets/Background.svg");
+    background-size: 110%;
+}
+
+.navbar-div{
+    display:inline-block;
+}
+
+.content-div{
+    display: inline-block;
+    position:static;
+    vertical-align: top;
+}
+
+.new-quiz-title{
+    margin-top:70px;
+    margin-left:275px;
+    display: inline-block;
+}
+
+.title{
+    display: inline-block;
+    font-size: 26px;
+    color:darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon{
+    display: inline-block;
+    color:darkgray;
+    position: relative;
+    top:-3px;
+    margin-left:13px;
+}
+
+.top-hr{
+    width:60px;
+    height:3px;
+    border:none;
+    border-radius: 15px;
+    background-color:$jordy;
+    margin-top:-7px;
+    margin-bottom: 30px;
+}
+
+.search-div{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 65px;
+    position: relative;
+    margin-left: 500px;
+    width: 400px;
+}
+
+.header{
+    display: inline-block;
+}
+
+.question-list{
+    margin-top:25px;
+    padding-left: 50px;
+    padding-right: 15px;
+    width:1490px;
+    height: 645px;
+    overflow: auto;
+}
+
+.question-list::-webkit-scrollbar{
+    display: initial;
+    left: -10px;
+        padding-top:25px;
+}
+
+.question-list::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+.add-quiz-div{
+    background-color: $orange;
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+}
+
+a{
+    color: white;
+    text-align: center;
+    float: right;
+    margin-right: 175px;
+    margin-top: 35px;
+    
+}
+
+a svg{
+    position: relative;
+    top: 8px;
+    left: 1px;
+}
+
+.add-quiz-div:hover{
+    background-color: $orange-lighter;
+}
+
+.add-quiz-div:active{
+    background-color: $orange-darker;
+}
+
+.login-button{
+    width:200px;
+    height:50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    display: inline;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.form-control{
+    margin-left: 200px;
+    margin-bottom:25px;
+}
+
+.other-hr{
+    margin-left: 200px;
+    width:100%;
+}
+
+.cd{
+    margin-top:150px;
+}

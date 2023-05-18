@@ -1,0 +1,32 @@
+/* -COLORS- */
+
+$navy: #242582;
+$blue: #2f2fa2;
+$jordy: #92B4F4;
+$orange: #FF570A;
+$crimson: #D72638;
+$lightgrey: #d4d4d4;
+
+$orange-lighter:#ff7843;
+$orange-darker:#d34401;
+
+.login-button{
+    border-radius: 25px;
+    background: $orange;
+    padding: 7px 30px 7px 30px;
+    border-width: 0px;
+    display: inline;
+    color:white;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.login-button:hover{
+    background-color: $orange-lighter;
+}
+
+.login-button:active{
+    background-color: $orange-darker;
+}

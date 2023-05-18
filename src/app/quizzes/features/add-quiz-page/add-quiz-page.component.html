@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="navbar-div">
+        <navbar></navbar>
+    </div>
+    <div class="content-div">
+        <div class="header">
+            <div class="new-quiz-title">
+                <h1 class="title">New Quiz</h1>
+                <i class="fa-solid fa-pen icon"></i>
+                <hr class="top-hr">
+            </div>
+        </div>
+        <div class="content">
+            <div class="cd">
+                <input class="form-control" type="text" placeholder="{{ (course | async)?.[0]?.name }}" aria-label="Disabled input example" disabled>
+                <hr class="other-hr">
+                <input class="form-control" type="text" placeholder="Quiz Name" aria-label="Disabled input example" [(ngModel)]="name">
+                <input class="form-control" type="url" placeholder="Image Url" aria-label="Disabled input example" [(ngModel)]="url">
+                <hr class="other-hr">
+                <input class="form-control" type="text" placeholder="Related Concepts" aria-label="Disabled input example" [(ngModel)]="tags">
+            </div>
+            <a href="add-quiz">
+                <div class="add-quiz-div">
+                    <button type="submit" class="login-button" (click)="addQuiz()">SAVE QUIZ</button>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

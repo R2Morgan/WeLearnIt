@@ -1,0 +1,45 @@
+.main{
+    text-align: center;
+    padding: 20px 0;
+    height:425px;
+    border-radius: 25px;
+    position:relative;
+}
+
+.image{
+    width:250px;
+    position:absolute;
+    left:175px;
+    bottom:5px;
+}
+
+.professor{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top:10px;
+    text-align: left;
+    margin-left:35px;
+    color:white;
+}
+
+.course{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:50px;
+    font-size: 40px;
+    max-height:140px;
+    overflow: hidden;
+    color:white;
+    margin-bottom:0px;
+    text-align: left;
+    margin-left:35px;
+    padding-right:35px;
+}
+
+.data{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: left;
+    margin-left:35px;
+    margin-top:20px;
+}

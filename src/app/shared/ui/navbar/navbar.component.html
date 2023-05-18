@@ -1,0 +1,60 @@
+<div class="main">
+    <img src="../../../../assets/LogoNoCircle.svg" class="logo"/>
+    <div class="profile-section>">
+        <img src="{{ currentUser.profilePicURL }}" class="profile-pic"/>
+        <button class="status" (click)="myFunction()" [ngClass]="{'available': currentUser.status === 0, 'away': currentUser.status === 1, 'busy': currentUser.status === 2}"></button>
+        <div id="statusDropdown" class="dropdown-content" #statusDropdown>
+            <p class="av" (click)="updateUserStatus('available')">Available</p>
+            <p class="aw" (click)="updateUserStatus('away')">Away</p>
+            <p class="bs" (click)="updateUserStatus('busy')">Busy</p>
+        </div>
+    </div>
+    <p class="name"> <span>{{currentUser.title}}.</span> {{currentUser.firstName}} {{currentUser.lastName}}</p>
+    <div class="personal-section">
+        <h1 class="section-name">PERSONAL</h1>
+        <a href="notifications">
+            <div class="tab-section" [ngClass]="{'active': selectedTab === 'notifications'}">
+                <i class="icon fa-solid fa-bell fa-xl"></i>
+                <h2 class="tab-title"> Notifications </h2>
+                <p *ngIf="notificationsNumber > 0" class="notification"> {{ notificationsNumber }}</p>
+            </div>
+        </a>
+        <a href="settings">
+            <div class="tab-section" [ngClass]="{'active': selectedTab === 'settings'}">
+                <i class="icon fa-solid fa-gear fa-xl"></i>
+                <h2 class="tab-title settings-text"> Settings </h2>
+            </div>
+        </a>
+    </div>
+    <div class="academic-section">
+        <h1 class="section-name">ACADEMIC</h1>
+        <a href="my-courses">
+            <div class="tab-section" [ngClass]="{'active': selectedTab === 'courses'}">
+                <i class="icon fa-solid fa-book-journal-whills fa-xl"></i>
+                <h2 class="tab-title"> Courses </h2>
+            </div>
+        </a>
+        <a href="quizzes">
+            <div class="tab-section" [ngClass]="{'active': selectedTab === 'quizzes'}">
+                <i class="icon fa-solid fa-pen fa-xl"></i>
+                <h2 class="tab-title"> Quizzes </h2>
+            </div>
+        </a>
+        <a href="questions">
+            <div class="tab-section" [ngClass]="{'active': selectedTab === 'questions'}">
+                <i class="icon fa-solid fa-clipboard-question fa-xl"></i>
+                <h2 class="tab-title"> Questions </h2>
+            </div>
+        </a>
+    </div>
+    <div class="social-section">
+        <h1 class="section-name">SOCIAL</h1>
+        <a href="messages">
+            <div class="tab-section" [ngClass]="{'active': selectedTab === 'messages'}">
+                <i class="icon fa-solid fa-message fa-xl"></i>
+                <h2 class="tab-title"> Messages </h2>
+                <p class="notification" *ngIf="chatsNumber > 0"> {{chatsNumber}} </p>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="main">
+    <div class="status-div" if="statusDiv" #statusDiv (click)="setStatusSeen()">
+    </div>
+    <div class="content-div">
+        <img src="{{ userPic }}" class="notification-pic"/>
+        <div class="notification-details">
+            <p class="notification-title">{{ notificationTitle }}</p>
+            <p class="notification-description">{{ notificationDescription }}</p>
+            <p class="notification-time">{{ notificationTime }}</p>
+        </div>
+    </div>
+</div>

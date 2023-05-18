@@ -1,0 +1,68 @@
+@import "../../../../styles/variables";
+
+.main{
+    width:381px;
+    max-width: 381px;
+    height: 350px;
+    background-color: transparent;
+    margin-bottom: 25px;
+    color:white;
+    border-radius: 10px;
+}
+
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    max-height:35px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.description{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    height: 170px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.description::-webkit-scrollbar{
+    display: initial;
+}
+
+.description::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.description a{
+    margin-bottom: 5px;
+    display: block;
+    color:white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.extra-data{
+    position:relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:20px;
+    font-size:14px;
+}
+
+button{
+    border:0;
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.158);
+    color:white;
+    float: right;
+}

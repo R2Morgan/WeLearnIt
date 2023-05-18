@@ -1,0 +1,75 @@
+@import "../../../../styles/variables";
+
+.main{
+    height:91vh;
+    background-image: url("../../../../assets/InvertedBackground.svg");
+    background-position-y: -1px;
+}
+
+.login-div{
+    width:25vw;
+    background-color:white;
+    padding:35px;
+    border-radius: 25px;
+    height: 550px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top:15vh;
+    box-shadow: 1px 5px 5px #c5c5c591;
+}
+
+.page-title{
+    text-align: center;
+    margin-bottom: 35px;
+    color:$navy;
+}
+
+.register{
+    text-align: center;
+}
+
+.login-button{
+    width:200px;
+    height:50px;
+    display:block;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color:$navy;
+}
+
+.forgot-password{
+    color:$navy;
+    text-align: center;
+    margin-top:35px;
+    margin-bottom:-15px;
+}
+
+input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: $lightgrey;
+    margin-top:35px;
+}
+
+form{
+    margin-top:50px;
+}
+
+.alert{
+    text-align: center;
+    color:$crimson;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.forgot-password-a:hover{
+    color:$orange;
+}
+
+.register a:hover{
+    color:$orange;
+}

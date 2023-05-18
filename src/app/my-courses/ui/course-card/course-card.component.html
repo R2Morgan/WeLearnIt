@@ -1,0 +1,13 @@
+<div class="card mb-3 main">
+    <div class="card-header professor-div"> 
+        {{ professorName }}
+        <button *ngIf="isEditable === 1" (click)="addLecture()"> <i class="fa-solid fa-plus"></i> </button>    
+    </div>
+    <div class="card-body">
+        <h1 class="title"> {{ name }} </h1>
+        <div class="description"> 
+            <a *ngFor="let lecture of lectureList" href="/images/myw3schoolsimage.jpg" download>{{ lecture.name }}</a>
+        </div>
+        <p class="extra-data"> {{ lectures }} Lectures | {{ quizzes }} Quizzes </p>
+    </div>
+</div>

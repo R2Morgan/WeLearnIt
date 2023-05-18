@@ -1,0 +1,55 @@
+<div class="main">
+    <div class="navbar-div">
+        <navbar></navbar>
+    </div>
+    <div class="content-div">
+        <div class="chat-list-div">
+            <div class="new-chat-div">
+                <input type="search" id="form1" placeholder="Search for user to start a new chat..."/>
+                <button (click)="addNewChatroom()" class="btn-1">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                <hr>
+            </div>
+            <div class="chat-list">
+                <div class="chat" *ngFor="let chatroom of availableChatrooms | async" (click)="onChatroomClick(chatroom)" [ngClass]="{'active': selectedChatroom === chatroom}">
+                    <img src="{{ getOtherUserPic(chatroom) | async }}"/>
+                    <div class="section-2">
+                        <p class="chat-name">{{ getOtherUserName(chatroom) | async }}</p>
+                        <p class="chat-text">{{chatroomLastMessages[chatroom.id]}}</p>
+                    </div>
+                    <div class="section-3">
+                        <p class="chat-time">{{chatroomLastMessagesTime[chatroom.id]}}</p>
+                        <div class="read-status" [ngClass]="{ 'not-read': chatroomLastMessagesStatus[chatroom.id] === 1 }"></div>
+                    </div>
+                </div>
+            </div>                         
+        </div>
+        <div class="chat-div" *ngIf="selectedChatroomMessages">
+            <div class="chat-header">
+                <img class="chat-window-img" src={{selectedChatroomUser?.profilePicURL}}/>
+                <div class="status" [ngClass]="statusClass"></div>
+                <h1 class="chat-window-name"> {{selectedChatroomUser?.title}} {{selectedChatroomUser?.firstName}} {{selectedChatroomUser?.lastName}} </h1>
+                <hr class="chat-window-hr">
+            </div>
+            <div class="chat-main">
+                <div class="not-empty">
+                    <message *ngFor="let message of selectedChatroomMessages | async" 
+                    [message]="message"
+                    [text]="message.text" 
+                    [time]="timeAgoString(message.time)">
+                    </message>                
+                </div>
+                <div class="empty" hidden>
+                    <img class="empty-image" src="../../../../assets/Empty.svg"/>
+                </div>
+            </div>
+            <div class="chat-footer">
+                    <input class="message" type="text" placeholder="Send a message" [(ngModel)]="newMessage">
+                    <button (click)="addNewMessage()"> 
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>

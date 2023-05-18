@@ -1,0 +1,84 @@
+@import "../../../../styles/variables";
+
+.main{
+    height: 100vh;
+    background-image: url("../../../../assets/Background.svg");
+    background-size: 110%;
+}
+
+.navbar-div{
+    display:inline-block;
+}
+
+.content-div{
+    display: inline-block;
+    position:static;
+    vertical-align: top;
+}
+
+.add-question-title{
+    margin-top:70px;
+    margin-left:275px;
+    display: inline-block;
+}
+
+.title{
+    display: inline-block;
+    font-size: 26px;
+    color:darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon{
+    display: inline-block;
+    color:darkgray;
+    position: relative;
+    top:-3px;
+    margin-left:13px;
+}
+
+.top-hr{
+    width:60px;
+    height:3px;
+    border:none;
+    border-radius: 15px;
+    background-color:$jordy;
+    margin-top:-7px;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: inline-block;
+    margin-top: 100px;
+    width:800px;
+    margin-left: 200px;
+}
+
+.questions-1{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.questions-2{
+    display: inline-block;
+    
+}
+
+input{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.sm-1{
+    width: 390px;
+}
+
+.sm-2{
+    width: 390px;
+}
+
+button{
+    width:  200px;
+    height: 50px;
+    margin-top: 100px;
+}

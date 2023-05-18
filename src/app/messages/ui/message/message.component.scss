@@ -1,0 +1,41 @@
+.message{
+    background-color:rgb(226, 226, 233);
+    min-height: 50px;
+    min-width: 50px;
+    max-width: 600px;
+    margin-left:50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top:12px;
+    padding-right:15px;
+    width:fit-content;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+.time{
+    position: relative;
+    margin-top:-10px;
+    top:-13px;
+    font-size: 12px;
+    margin-left: 55px;
+}
+
+.from-me .message{
+    margin-left: auto;
+    margin-right: 35px;
+    text-align: right;
+}
+
+.from-me .time{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.from-me .text{
+    text-align: right;
+}

@@ -1,0 +1,65 @@
+@import "../../../../styles/variables";
+
+.main{
+    background-image: url("../../../../assets/Background.svg");
+    background-size: 110%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    padding: 10px;
+    margin-top:100px;
+    overflow: scroll;
+  }
+
+  .page-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    color:$navy;
+    position:relative;
+    top:50px;
+    text-align: center;
+}
+
+hr{
+  width:250px;
+  border-width: 3px;
+  border-color:$navy;
+  border-radius: 25px;
+  position:relative;
+  top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.course-card:nth-child(4n+1){
+  background-color: $crimson;
+}
+
+.course-card:nth-child(4n+2){
+  background-color: $blue;
+}
+
+.course-card:nth-child(4n+3){
+  background-color: $orange;
+}
+
+.course-card:nth-child(4n+4){
+  background-color: $jordy;
+}
+
+.course-card{
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition: all .2s ease-in-out;
+}
+
+.course-card:hover{
+  transform: scale(1.05);
+}

@@ -1,0 +1,104 @@
+@import "../../../../styles/variables";
+
+.main{
+    height: 100vh;
+    background-image: url("../../../../assets/Background.svg");
+    background-size: 140%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.s1{
+    margin-top:5vh;
+    margin-left:50px;
+    font-size: 30px;
+    color: darkgray;
+}
+
+.s2{
+    font-size: 20px;
+    margin-top: 10vh;
+    margin-left: 75px;
+}
+
+.s3{
+    font-size: 20px;
+    margin-top: 10vh;
+    margin-left: 235px;
+}
+
+.s4{
+    font-size: 20px;
+    margin-top: 6vh;
+    margin-left: 175px;
+}
+
+.s5{
+    font-size: 20px;
+    margin-top: 5vh;
+    margin-left: 375px;
+}
+
+.stepBubble{
+    display: inline-block;
+    border-radius: 50px;
+    background-color: red;
+    width:30px;
+    height:30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+div.stepBubble {
+    padding-top: 5px;
+    color: white;
+  }
+
+.crimson{
+    background-color: $crimson;
+}
+
+.orange{
+    background-color: $orange;
+}
+
+.jordy{
+    background-color: $jordy;
+}
+
+.navy{
+    background-color: $navy;
+}
+
+.ai{
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:25px;
+}
+
+.input{
+    padding-right:50px;
+    padding-left:50px;
+    padding-top:10px;
+}
+
+textarea{
+    resize: none;
+    height:20vh;
+}
+
+.final-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.final-div h2{
+    display: inline-block;
+    margin-right: auto;
+}
+
+.final-div button{
+    margin-left: auto;
+    margin-top:20px;
+    margin-right:50px;
+}

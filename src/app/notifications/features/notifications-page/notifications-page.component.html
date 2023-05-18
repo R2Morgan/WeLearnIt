@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="navbar-div">
+        <navbar></navbar>
+    </div>
+    <div class="content-div">
+        <div class="notification-title">
+            <h1 class="title">Notifications</h1>
+            <i class="fa-solid fa-bell icon"></i>
+            <hr>
+        </div>
+        <ul class="notification-list">
+            <li class="notification-item" *ngFor="let notification of $notifications">
+                <notification 
+                [newNotification]="notification.status"
+                [notificationId]="notification.id" 
+                [notificationUserPic]="notification.from" 
+                [notificationTitle]="notification.title"
+                [notificationDescription]="notification.description"
+                [notificationTime]="notification.time"></notification>
+            </li>
+        </ul>
+    </div>
+</div>

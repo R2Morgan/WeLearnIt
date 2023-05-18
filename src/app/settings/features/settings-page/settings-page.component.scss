@@ -1,0 +1,133 @@
+@import "../../../../styles/variables";
+
+.main{
+    height: 100vh;
+    background-image: url("../../../../assets/Background.svg");
+    background-size: 110%;
+}
+
+.navbar-div{
+    display:inline-block;
+}
+
+.content-div{
+    display: inline-block;
+    position:static;
+    vertical-align: top;
+}
+
+.settings-title{
+    margin-top:70px;
+    margin-left:275px;
+}
+
+.title{
+    display: inline-block;
+    font-size: 26px;
+    color:darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon{
+    display: inline-block;
+    color:darkgray;
+    position: relative;
+    top:-3px;
+    margin-left:13px;
+}
+
+.top-hr{
+    width:60px;
+    height:3px;
+    border:none;
+    border-radius: 15px;
+    background-color:$jordy;
+    margin-top:-7px;
+    margin-bottom: 30px;
+}
+
+.profile-picture{
+    width:75px;
+    height:75px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right:25px;
+}
+
+.profile-picture-url{
+    display: inline-block !important;
+}
+
+.settings-div{
+    display: inline-block;
+}
+
+input:focus{
+    outline-style:solid;
+    outline-color:#c2dbfe;
+    outline-width:4px;
+    border: 1px solid #0049af81;
+}
+
+.update-button{
+    width:200px;
+    height:50px;
+}
+
+.logout-button{
+    background-color: $crimson !important;
+    border-radius: 25px;
+    background: $crimson;
+    padding: 7px 30px 7px 30px;
+    border-width: 0px;
+    display: inline;
+    color:white;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    width:200px;
+    height:50px;
+}
+
+.form{
+    margin-left:200px;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    padding-left: 12px;
+    outline:none;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.divider{
+    width:825px;
+    height:1px;
+    border:none;
+    border-radius: 15px;
+    background-color:black;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.settings-div{
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.update-button{
+    margin-top: 100px;
+}
+
+.logout-button{
+    margin-left: 800px;
+}
+
+a{
+    text-decoration: none;
+}

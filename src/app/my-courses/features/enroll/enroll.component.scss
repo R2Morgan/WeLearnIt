@@ -1,0 +1,82 @@
+@import "../../../../styles/variables";
+
+.course{
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    margin-bottom:10px;
+    box-shadow: 0px 5px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.details-1{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.details-2{
+    display: inline-block;
+    position: relative;
+}
+
+.professor{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -25px;
+    margin-left: 25px;
+}
+
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 25px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-left: 25px;
+}
+
+.details-2{
+    float: right;
+    margin-right: 50px;
+    margin-top: 37px;
+}
+
+.details-2 p{
+    display: inline-block;
+    margin-right:50px;
+}
+
+button{
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.158);
+    color:white;
+}
+
+.course:nth-child(4n+1){
+    background-color: $crimson;
+  }
+  
+  .course:nth-child(4n+2){
+    background-color: $blue;
+  }
+  
+  .course:nth-child(4n+3){
+    background-color: $orange;
+  }
+  
+  .course:nth-child(4n+4){
+    background-color: $jordy;
+  }
+
+  .course-list{
+    padding: 25px;
+  }

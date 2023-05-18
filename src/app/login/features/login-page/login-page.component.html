@@ -1,0 +1,29 @@
+<header></header>
+<div class="main">
+    <div class="login-div">
+        <h1 class="page-title">
+            Login
+        </h1>
+        <hr>
+        <form (ngSubmit)="login()" #loginForm="ngForm">
+            <div class="mb-3">
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" name="email" [(ngModel)]="email" required> 
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="emailInput" placeholder="YourPassword1234" name="password" [(ngModel)]="password" required>
+              </div>
+              <p class="forgot-password">
+                <a href="forgot-password" class="forgot-password-a">
+                  Forgot Your Password?
+                </a>
+              </p>
+              <p class="alert" style="visibility:hidden">Your Login Data Is Invalid!</p>
+              <div class="mb-3 button-div">
+                <a href="welcome">
+                  <button type="submit" class="login-button" href="">LOG IN</button>
+                </a>
+              </div>
+              <p class="register">Not a member? <a href="register">Register</a></p>
+        </form>
+    </div>
+</div>

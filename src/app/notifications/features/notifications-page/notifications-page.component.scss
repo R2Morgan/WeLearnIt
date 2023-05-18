@@ -1,0 +1,75 @@
+@import "../../../../styles/variables";
+
+.main{
+    height: 100vh;
+    background-image: url("../../../../assets/Background.svg");
+    background-size: 110%;
+}
+
+.navbar-div{
+    display:inline-block;
+}
+
+.content-div{
+    display: inline-block;
+    position:static;
+    vertical-align: top;
+}
+
+.notification-list{
+    padding:25px;
+    margin: 0px 0px 100px 250px;
+    max-height:78vh;
+    overflow-y: auto;
+    padding-top:3px;
+    padding-bottom:0px;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: $blue;
+
+    // Hides the Scrollbar
+    display: initial;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #1b1d5e;
+}
+
+.notification-item{
+    list-style: none;
+}
+
+.notification-title{
+    margin-top:70px;
+    margin-left:275px;
+}
+
+.title{
+    display: inline-block;
+    font-size: 26px;
+    color:darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon{
+    display: inline-block;
+    color:darkgray;
+    position: relative;
+    top:-3px;
+    margin-left:13px;
+}
+
+hr{
+    width:60px;
+    height:3px;
+    border:none;
+    border-radius: 15px;
+    background-color:$jordy;
+    margin-top:-7px;
+    margin-bottom: 30px;
+}

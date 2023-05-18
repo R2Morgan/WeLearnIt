@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="navbar-div">
+        <navbar></navbar>
+    </div>
+    <div class="content-div">
+        <div class="header">
+            <div class="quizzes-title">
+                <h1 class="title">Quizzes</h1>
+                <i class="fa-solid fa-pen icon"></i>
+                <hr class="top-hr">
+            </div>
+            <div class="search-div">
+                <select class="form-select" id="autoSizingSelect" [(ngModel)]="selectedCourse" (change)="onSelectCourse()">
+                    <option *ngFor="let course of enrolledCourses | async" [value]="course.id">
+                        {{ course.name }}
+                      </option>
+                </select>
+            </div>
+        </div>
+        <div class="quizzes-div">
+            <div class="quizzes-list">
+                <quiz *ngFor="let quiz of quizzes | async" [quiz]="quiz"></quiz>
+            </div>
+        </div>
+        <a href="add-quiz" *ngIf="selectedCourse != null && (currentUser | async)?.[0]?.type === 1" (click)="addQuiz()">
+            <div class="add-quiz-div">
+                <i class="fa-solid fa-plus fa-2xl"></i>
+            </div>
+        </a>
+    </div>
+</div>

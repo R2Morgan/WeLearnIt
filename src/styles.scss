@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/variables";
+
+body{
+    margin:0px;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+
+    // Hides the Scrollbar
+    display: none;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: $blue;
+}

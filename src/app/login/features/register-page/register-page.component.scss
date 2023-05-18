@@ -1,0 +1,155 @@
+@import "../../../../styles/variables";
+
+.main{
+    height:91vh;
+    background-image: url("../../../../assets/InvertedBackground.svg");
+    background-size: 101%;
+    background-position-y: -1px;
+}
+
+.register-div{
+    width:50vw;
+    background-color:white;
+    padding:35px;
+    border-radius: 25px;
+    height: 550px;
+    margin-left:150px;
+    position:relative;
+    top:15vh;
+    box-shadow: 1px 5px 5px #c5c5c591;
+    display: inline-block;
+}
+
+.page-title{
+    text-align: center;
+    margin-bottom: 35px;
+    color:$navy;
+}
+
+.login{
+    text-align: center;
+}
+
+.register-button{
+    width:200px;
+    height:50px;
+    display:block;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color:$navy;
+}
+
+input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: $lightgrey;
+    margin-top:35px;
+}
+
+form{
+    margin-top:50px;
+}
+
+.alert{
+    text-align: center;
+    color:$crimson;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.login a:hover{
+    color:$orange;
+}
+
+.cost-plan{
+    background-color:white;
+    float:right;
+    width:400px;
+    height:550px;
+    position:relative;
+    margin-right:150px;
+    border-radius: 25px;
+    top:140px;
+    box-shadow: 5px 5px 5px #c5c5c591;
+    padding:35px;
+}
+
+.input-group{
+    width:95%;
+}
+
+.second-group{
+    position: relative;
+    left:45px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .cost-button{
+    width:200px;
+    height:50px;
+    display: block;
+    margin:0 auto;
+    margin-top:50px;
+  }
+
+  .cost-title{
+    color:$orange;
+    font-size:25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top:25px;
+  }
+
+  .cost-description{
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .cost-amount{
+    color:$orange;
+    font-size: 40px;
+    text-align: center;
+    margin-top:50px;
+  }
+
+  .cost-span{
+    font-size: 14px;
+  }
+
+  .cost-span-1{
+    text-decoration: line-through black;
+  }
+
+  .c2{
+    text-align: end;
+    color: $orange;
+    font-weight: bold;
+  }
+
+  .benefits{
+    font-size:18px;
+    font-weight:500;
+    margin-top:40px;
+  }
+
+  .cost-button:active{
+    background-color:$orange;
+  }
+
+  .cost-button:hover{
+    background-color:$orange;
+  }

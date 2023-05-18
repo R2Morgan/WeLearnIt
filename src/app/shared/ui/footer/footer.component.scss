@@ -1,0 +1,70 @@
+@import "../../../../styles/variables";
+
+.main{
+    height:20vh;
+    box-shadow: inset 0px 5px 4px 0px gray;
+}
+
+.version-control{
+    float: left;
+    font-size: 14px;
+    color: $navy;
+    margin-left: 5%;
+}
+
+.copyright{
+    float: right;
+    font-size: 14px;
+    color: $navy;
+    margin-right:5%;
+}
+
+.logo{
+    width:75px;
+    margin-top: 30px;
+    display:inline-block;
+    filter:brightness(45%);
+}
+
+.name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:inline-block;
+    margin-top:40px;
+    vertical-align: middle;
+    margin-left:50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.branding{
+    text-align: center;
+    color: $navy;
+}
+
+.url{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.url-container{
+    margin-right: 50%;
+    margin-left: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.router-control{
+    font-size: 14px;
+    color: $navy;
+    text-decoration: none;
+}
+
+hr{
+    position: relative;
+    border: solid 1px $navy;
+    margin-right:5%;
+    margin-left:5%;
+    margin-top:25px;
+}

@@ -1,0 +1,64 @@
+@import "../../../../styles/variables";
+
+.main{
+    background-image: linear-gradient(to left,#242572, #2b2fe7);;
+    height:9vh;
+}
+
+.logo{
+    position: relative;
+    width:75px;
+    top:5px;
+}
+
+.logo-div{
+    margin-left:150px;
+    display: inline;
+}
+
+.links-div{
+    display:inline;
+    position: relative;
+    top:22px;
+}
+
+.nav{
+    list-style-type: none;
+    display: inline;
+    float:right;
+    margin-right:150px;
+}
+
+.item{
+    display: inline;
+    margin-left:75px;
+}
+
+.link{
+    color:white;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    position: relative;
+}
+
+.link:after{
+    content: "";
+    position: absolute;
+    background-color: $orange;
+    height: 3px;
+    width: 0%;
+    left: 0px;
+    bottom: 0px;
+    top:17px;
+    transition: 0.3s;
+}
+
+.link:hover:after{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}

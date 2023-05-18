@@ -1,0 +1,50 @@
+<header></header>
+<div class="main">
+    <div class="register-div">
+        <h1 class="page-title">
+            Register
+        </h1>
+        <hr>
+        <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control first-group" id="firstNameInput" placeholder="John" name="firstName" [(ngModel)]="firstName" required>
+                <input type="text" class="form-control second-group" id="lastNameInput" placeholder="Smith" name="lastName" [(ngModel)]="lastName" required>
+            </div>
+            <div class="input-group mb-3">
+                <input type="email" class="form-control first-group" id="emailInput" placeholder="name@example.com" name="email" [(ngModel)]="email" required>
+                <input type="password" class="form-control second-group" id="passwordInput" placeholder="YourPassword1234" name="password" [(ngModel)]="password" required>
+              </div>
+              <p class="alert" style="visibility:hidden">An Account With This Email Already Exists</p>
+              <div class="mb-3 button-div">
+                <a href="landing">
+                  <button type="submit" class="register-button login-button" href="">REGISTER</button>
+                </a>
+              </div>
+              <p class="login">Already a member? <a href="login">Login</a></p>
+        </form>
+    </div>
+    <div class="cost-plan">
+        <h2 class="cost-title"> Full Access Account</h2>
+        <p class="cost-description"> Gain Full Access To The Platform</p>
+        <h3 class="cost-amount"> <span class="cost-span-1">$19.99</span><span class="cost-span">/mo</span></h3>
+        <button class="login-button cost-button">NOW FREE</button>
+        <div class="benefits">
+            <div class="row">
+                <div class="column">Full Access</div>
+                <div class="column c2">✓</div>
+            </div>
+            <div class="row">
+                <div class="column">Add Your Own Questions</div>
+                <div class="column c2">✓</div>
+            </div>
+            <div class="row">
+            <div class="column">Live Chat With Professors</div>
+            <div class="column c2">✓</div>
+        </div>
+        <div class="row">
+            <div class="column">Join Any Course</div>
+            <div class="column c2">✓</div>
+        </div>
+    </div>
+    </div>
+</div>

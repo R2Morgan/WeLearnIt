@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ChatService {
   private apiUrl = 'https://api.openai.com/v1/chat/completions';
-  private apiKey = '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';
+  private apiKey = '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';
 
   constructor(private http: HttpClient) { }
 

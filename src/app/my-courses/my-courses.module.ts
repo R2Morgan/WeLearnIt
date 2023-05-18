@@ -6,6 +6,7 @@ import { CourseCardComponent } from './ui/course-card/course-card.component';
 import { EnrollComponent } from './features/enroll/enroll.component';
 import { NewLectureComponent } from './features/new-lecture/new-lecture.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class MyCoursesModule { }

@@ -1,30 +1,30 @@
 <div class="main">
-    <h1 class="s1">How To Create a New Lecture</h1>
-    <h2 class="s2"><div class="stepBubble crimson">1.</div> Create a new PDF File and Save it on Google Drive or Whatever Other Platform You Choose</h2>
-    <h2 class="s3"><div class="stepBubble orange">1b.</div> If you Choose So, Create The Lecture With The Following AI Generated Text</h2>
-    <div class="ai">
-        <div class="row">
-            <div class="col">
-              <textarea type="text" class="form-control" placeholder="Generate me a 1000 word lecture about OOP" aria-label="AIInput"></textarea>
-            </div>
-            <div class="col">
-              <textarea type="text" class="form-control" placeholder="Powered By OpenAI's ChatGPT" aria-label="AIOutput" disabled></textarea>
-            </div>
+  <h1 class="s1">How To Create a New Lecture</h1>
+  <h2 class="s2"><div class="stepBubble crimson">1.</div> Create a new PDF File and Save it on Google Drive or Whatever Other Platform You Choose</h2>
+  <h2 class="s3"><div class="stepBubble orange">1b.</div> If you Choose So, Create The Lecture With The Following AI Generated Text</h2>
+  <div class="ai">
+      <div class="row">
+          <div class="col">
+              <textarea type="text" class="form-control" placeholder="Generate me a 1000 word lecture about OOP" aria-label="AIInput" (keyup.enter)="onEnterKeyPressed()" [(ngModel)]="aiInput"></textarea>
           </div>
-    </div>
-    <h2 class="s4"><div class="stepBubble jordy">2.</div> Choose a Name For Your Lecture and Paste The URL </h2>
-    <div class="input">
-        <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Lecture Name" aria-label="Lecture Name" [(ngModel)]="name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Document's URL" aria-label="Document URL" [(ngModel)]="url">
-            </div>
+          <div class="col">
+              <textarea type="text" class="form-control" placeholder="Powered By OpenAI's ChatGPT" aria-label="AIOutput" disabled>{{ aiOutput }}</textarea>
           </div>
-    </div>
-    <div class="final-div">
-        <h2 class="s5"><div class="stepBubble navy">3.</div> Hit Save </h2>
-        <button type="submit" class="login-button"  (click)="addLecture()">SAVE</button>
-    </div>
+        </div>
+  </div>
+  <h2 class="s4"><div class="stepBubble jordy">2.</div> Choose a Name For Your Lecture and Paste The URL </h2>
+  <div class="input">
+      <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Lecture Name" aria-label="Lecture Name" [(ngModel)]="name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Document's URL" aria-label="Document URL" [(ngModel)]="url">
+          </div>
+        </div>
+  </div>
+  <div class="final-div">
+      <h2 class="s5"><div class="stepBubble navy">3.</div> Hit Save </h2>
+      <button type="submit" class="login-button" (click)="addLecture()">SAVE</button>
+  </div>
 </div>

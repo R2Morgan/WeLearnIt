@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { CourseService } from 'src/app/courses/data-access/course.service';
 import { QuestionService } from 'src/app/questions/data-access/question.service';
 import { CookieService } from 'src/app/shared/data-access/cookie.service';
+import { ChatService } from '../../data-access/chat.service';
 
 @Component({
   selector: 'new-lecture',
@@ -14,8 +15,10 @@ export class NewLectureComponent implements OnInit {
   name: string;
   url: string;
   course!: Observable<any>;
+  aiOutput: string = '';
+  aiInput: string = '';
 
-  constructor(private courseService: CourseService, private questionService: QuestionService, private cookieService: CookieService) {
+  constructor(private chatService: ChatService, private courseService: CourseService, private questionService: QuestionService, private cookieService: CookieService) {
     this.currentUserId = parseInt(this.cookieService.getCookie('currentUser'));
     this.name = '';
     this.url = '';
@@ -41,4 +44,21 @@ export class NewLectureComponent implements OnInit {
     }
   }
 
+  onEnterKeyPressed() {
+    this.aiOutput = "Processing...";
+    if (this.aiInput) {
+      this.chatService.sendMessage(this.aiInput).subscribe(
+        (response: any) => {
+          const output = response['choices'][0]['message']['content'];
+          this.aiOutput = output;
+          console.log(this.aiOutput);
+        },
+        (error: any) => {
+          console.log("Error:", error);
+        }
+      );
+    }
+  }
+   
+  
 }

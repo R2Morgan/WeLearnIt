@@ -1,7 +1,7 @@
 @import "../../../../styles/variables";
 
 .main{
-    background-image: linear-gradient(to left,$navy, #2b2ff7);;
+    background-image: linear-gradient(to left,$navy, #2b2ff7);
     height:91vh;
 }
 
@@ -49,4 +49,27 @@ h2{
 
 a{
     text-decoration: none;
+}
+
+@media screen and (max-width: 1919px) {
+    .main{
+        display:none;
+    }
+    .mobile{
+        display:block !important;
+        background-image: linear-gradient(to left,$navy, #2b2ff7);
+        height:100vh;
+    }
+    .mobile h1{
+        color:black;
+        text-align: center;
+        margin: auto;
+        color:white;
+        position: relative;
+        top: 45%;
+    }
+}
+
+.mobile{
+    display:none;
 }

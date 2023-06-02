@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { finalize, first, isEmpty, tap } from 'rxjs';
 import { CourseService } from 'src/app/courses/data-access/course.service';
 import { CookieService } from 'src/app/shared/data-access/cookie.service';
 
@@ -19,6 +20,7 @@ export class EnrollComponent implements OnInit {
   ngOnInit(): void {
     this.currentUser = this.courseService.getUserById(this.currentUserId);
     this.displayedCourses = this.courseService.getOtherCoursesForUserId(this.currentUserId);
+
     this.displayedCourses.subscribe((courses: any[]) => {
       for (const course of courses) {
         this.courseService.getQuizAmount(course.id).subscribe(quizAmount => {

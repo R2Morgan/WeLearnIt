@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
-import { Observable, combineLatest, forkJoin, map, of, switchMap, tap } from 'rxjs';
+import { Observable, combineLatest, forkJoin, isEmpty, map, of, switchMap, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -52,6 +52,9 @@ export class CourseService {
           .map(enrollment => enrollment.courseId);
     
         const courseObservables = courseIds.map(courseId => this.getCourseById(courseId));
+        if(courseObservables.length === 0){
+          return of([]);
+        }
     
         return combineLatest(courseObservables).pipe(
           map(courses => courses.flat())

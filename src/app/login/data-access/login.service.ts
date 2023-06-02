@@ -26,6 +26,7 @@ export class LoginService {
 
 
   addUser(user: any): void {
-    this.db.list('/user').push(user);
+    const id = user.id.toString();
+    this.db.object(`/user/${id}`).set(user);
   }
 }

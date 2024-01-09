@@ -97,9 +97,9 @@ WeLearnIt offers a range of functionalities across different webpages:
 8. Installation
    ------------
    
-1. Clone the repository.
+- Clone the repository.
    
-3. Install dependencies using npm install.
+- Install dependencies using npm install.
    
 9. Usage
    -----
